@@ -13,4 +13,4 @@ References :
 
 - Mainly GNU Linux geared (for scripts .sh , and so on)
 
-. Slice directory naming convention : slice-[NUMBER],NUMBER = image number
+- Slice directory naming convention : slice-[NUMBER],NUMBER = image number
