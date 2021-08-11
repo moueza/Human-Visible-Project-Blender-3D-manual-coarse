@@ -1,5 +1,7 @@
 Coarse work, just for FREE eye glimpse on anatomy ( and proportion, and anatomic relations)
 
+Objective no1 : POC -> VISIBLE  results in .blend file
+
 If you use this, or love this, let us know by any way or a URL reference 
 
 Mainly manual at first 
