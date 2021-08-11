@@ -11,4 +11,4 @@ References :
 
 - CONTRIBUTE, by PULL REQUEST, in the slice directory you create, copying (possibly link) a slice and providing a LTS .blend of that slice : so it will be a "2D" (a slices merge reconstruction will be made further). You can copy any slice, draw any organ, any coarse. If you can, try to be coherent with sibbling .blend (copy/paste to respect color, number of points of the outline)
 
-- GNU Linux geared
+- Mainly GNU Linux geared (for scripts .sh , and so on)
