@@ -13,7 +13,7 @@ References :
 
 INSTRUCTIONS :
 
-- CONTRIBUTE, by PULL REQUEST from your created branch to STAGING branch only, in the slice directory you create, copying (possibly link) a slice and providing a latest LTS .blend of that slice : so it will be a "2D" (a slices merge reconstruction will be made further). You can copy any slice, draw any organ, any coarse. If you can, try to be coherent with sibbling .blend (copy/paste to respect color, number of points of the outline). 1 color by organ, color value is not relevent because can be post tweaked.
+- CONTRIBUTE, by PULL REQUEST from your created branch to STAGING branch only, in the slice directory you create, copying (possibly link) a slice and providing 2.93 LTS .blend of that slice : so it will be a "2D" (a slices merge reconstruction will be made further). You can copy any slice, draw any organ, any coarse. If you can, try to be coherent with sibbling .blend (copy/paste to respect color, number of points of the outline). 1 color by organ, color value is not relevent because can be post tweaked.
 
 - Mainly GNU Linux geared (for scripts .sh , and so on)
 
