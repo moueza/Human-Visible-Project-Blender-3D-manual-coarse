@@ -23,8 +23,8 @@ NORMS :
 
 image-0001.jpeg to image-1867.jpeg
 
-image-0001.jpeg on iso plane at z=-0.01
+image-0001.jpeg on iso plane at z=-0.01m
 
-image-0002.jpeg on iso plane at z=-0.02
+image-0002.jpeg on iso plane at z=-0.02m
 
 ...
