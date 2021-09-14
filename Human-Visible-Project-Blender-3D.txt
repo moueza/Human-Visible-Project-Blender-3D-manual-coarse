@@ -22,7 +22,7 @@
        0741      pelvis
         967      sex penis
         999      1->2
-       1132      thigh       JUNCTION 1 TO 2 ? (union)
+       1132      thigh
        1307      femur knee
        
        https://blender.stackexchange.com/questions/157562/sorting-collections-alphabetically-in-the-outliner
