@@ -1,5 +1,8 @@
 .Bl2.93 LTS
 .25img/sec -> .04s
+.( computer image processing by motion tracking )
+.GP https://docs.blender.org/manual/en/2.93/grease_pencil/modes/object/convert_to_geometry.html
+
        0066 back hole ?
        0080 long front hole ?
  
@@ -12,10 +15,13 @@
        0354      trachea+esophagus 
        
        0358      aorta
+       0407      1->3
  image-0454.jpeg heart
         506      dammage
  image-0614.jpeg kidneys
        0741      pelvis
+        967      sex penis
+        999      1->2
        1132      thigh       JUNCTION 1 TO 2 ? (union)
        1307      femur knee
        
@@ -23,5 +29,5 @@
        
 .heart vs stomach hight
 .asset manager to merge Collections from the different technos ( curves, mesh, metaballs, Grease Pencil GP ) 
-
+.ombilic ?
        
