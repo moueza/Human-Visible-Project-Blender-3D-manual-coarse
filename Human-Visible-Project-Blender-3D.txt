@@ -1,0 +1,27 @@
+.Bl2.93 LTS
+.25img/sec -> .04s
+       0066 back hole ?
+       0080 long front hole ?
+ 
+.image-0116.jpeg brain eyes
+       0213      carotid
+       0225      triangle + bump ?
+        278      carotid
+       
+        287      rachis+trachea+esophagus 
+       0354      trachea+esophagus 
+       
+       0358      aorta
+ image-0454.jpeg heart
+        506      dammage
+ image-0614.jpeg kidneys
+       0741      pelvis
+       1132      thigh       JUNCTION 1 TO 2 ? (union)
+       1307      femur knee
+       
+       https://blender.stackexchange.com/questions/157562/sorting-collections-alphabetically-in-the-outliner
+       
+.heart vs stomach hight
+.asset manager to merge Collections from the different technos ( curves, mesh, metaballs, Grease Pencil GP ) 
+
+       
