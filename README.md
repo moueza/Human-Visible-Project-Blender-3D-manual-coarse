@@ -7,6 +7,8 @@ If you use this, or love this, let us know by any way or a URL reference
 Mainly manual at first 
 
 References : 
+- img extract https://www.youtube.com/watch?v=dPPjUtiAGYs
+
 - https://github.com/kohnech/visible-human-project for source FTP
 
 - https://en.wikipedia.org/wiki/CT_scan
