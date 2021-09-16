@@ -1,0 +1,2 @@
+all:
+	rm *.blend1

@@ -7,7 +7,7 @@
        0080 long front hole ?
  
 .image-0116.jpeg brain eyes
-       0213      carotid
+       0213      carotid+neck
        0225      triangle + bump ?
         278      carotid
        
@@ -30,4 +30,7 @@
 .heart vs stomach hight
 .asset manager to merge Collections from the different technos ( curves, mesh, metaballs, Grease Pencil GP ) 
 .ombilic ?
-       
+.Cn Tn Ln ?
+.( AR reality )
+.legend arrow text OK, cam rotating text KO, same color as Obj material color driver KO
+.SOFT BODY
