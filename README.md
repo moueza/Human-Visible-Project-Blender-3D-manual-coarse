@@ -10,6 +10,7 @@ References :
 - https://github.com/kohnech/visible-human-project for source FTP
 
 - https://en.wikipedia.org/wiki/CT_scan
+- cubic voxels, src, img, FTP http://www.dlib.org/dlib/october95/10ackerman.html
 
 INSTRUCTIONS :
 
