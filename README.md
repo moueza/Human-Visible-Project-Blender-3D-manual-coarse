@@ -18,6 +18,7 @@ References :
 - Model + X-ray + colors segmentation PDF : https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.21.4907&rep=rep1&type=pdf
 - Modern VHP + volunteers https://demystifyingyourhealth.com/visible-human-project/
 - Made elsewhere : https://youtu.be/vB3_0wq4lzA?t=411
+- Curve Fill, Curve to Points, Resample Curve, Mesh to Curve,   : https://code.blender.org/2021/09/procedural-curves-in-3-0-and-beyond/
 
 INSTRUCTIONS :
 
