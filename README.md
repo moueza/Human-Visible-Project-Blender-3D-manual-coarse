@@ -11,6 +11,7 @@ References :
 
 - https://en.wikipedia.org/wiki/CT_scan
 - cubic voxels, src, img, FTP, Metathesaurus http://www.dlib.org/dlib/october95/10ackerman.html
+- Slicer MAC forum : https://discourse.slicer.org/t/visible-human-project-mri-dataset-loading/8034/5
 
 INSTRUCTIONS :
 
