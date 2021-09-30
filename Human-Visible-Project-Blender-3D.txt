@@ -47,3 +47,5 @@
 .Mask to removes skin parts for inside visualization
 .Rib z end : 623
 .Diaphragm ?
+.Blader ? 876
+.Buoy fat
