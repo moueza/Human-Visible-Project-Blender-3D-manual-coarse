@@ -27,7 +27,7 @@
         814
         847
         856
-         
+        900      pubis 
         967      sex penis
         999      1->2
        1132      thigh
@@ -48,4 +48,7 @@
 .Rib z end : 623
 .Diaphragm ?
 .Blader ? 876
-.Buoy fat
+.Love handles ( Buoy fat ) ?
+.Scapula fat ?
+.Pelvis hole ++++ +++++++ ?
+.Sacrum ?
