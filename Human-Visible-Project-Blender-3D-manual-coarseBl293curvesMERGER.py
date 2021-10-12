@@ -51,24 +51,26 @@ f.close
                 #if line_count != 0:
                     #print(f'\t {line_count} {roww[1]} {int(roww[4]) + 1000}')
 fileRef="Human-Visible-Project-Blender-3D-manual-coarseBl293curves.blend"
-print(len(bpy.data.collections))
+print("lbl20 len = ",len(bpy.data.collections))
 #delete already ancient collections
+#generate for test
+
 
 for collection in bpy.data.collections :
-   bpy.data.collections.remove(collection)
    print(collection.name) 
-   #or index  
-   for obj in collection.objects:
-           bpy.data.objects.remove(obj, do_unlink=True)    
-           bpy.data.collections.remove(collection)
-   if (collection.name.find('Coll', 0, 50)):
-        bpy.data.collections.remove(collection)
+   #bpy.data.collections.remove(collection)
+   #or index       
+   if (not(-1 == collection.name.find('Coll', 0, 50))):
         print(True)
         #https://b3d.interplanety.org/en/removing-collections-through-the-blender-python-api/
         for obj in collection.objects:
+           #lbl45
            bpy.data.objects.remove(obj, do_unlink=True)    
-           bpy.data.collections.remove(collection)
+        bpy.data.collections.remove(collection)
+           #lbl45
+           
+
    else:
         print(False)
-        
+   
 #print(bpy.data.collections[2])
