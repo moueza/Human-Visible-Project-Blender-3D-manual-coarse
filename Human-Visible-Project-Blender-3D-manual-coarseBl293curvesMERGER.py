@@ -58,6 +58,9 @@ for collection in bpy.data.collections :
    bpy.data.collections.remove(collection)
    print(collection.name) 
    #or index  
+   for obj in collection.objects:
+           bpy.data.objects.remove(obj, do_unlink=True)    
+           bpy.data.collections.remove(collection)
    if (collection.name.find('Coll', 0, 50)):
         bpy.data.collections.remove(collection)
         print(True)
