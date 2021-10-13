@@ -4,7 +4,7 @@
 
 import bpy
 import os
- 
+ #import bpy ; import os ; filename420547 = os.path.join(os.path.dirname(bpy.data.filepath), "Human-Visible-Project-Blender-3D-manual-coarseBl293curvesMERGER.py"); exec(compile(open(filename420547).read(), filename420547, 'exec'))
 prenom = 88888
 text = "DDDDu in %s\n" % prenom
 #filename= "/home/peter/POUB/blender/DANSE/kizombaSemba/COURS/kizomba-Mervil-sem02-avance-Bl28.txt"
@@ -57,13 +57,60 @@ filepath = "/home/peter/POUB/Human-Visible-Project-Blender-3D/Human-Visible-Proj
 #blender python api objects of another file
 #https://blender.stackexchange.com/questions/75746/import-multiple-objects-using-python
 #    ancien lib doc   https://docs.blender.org/api/blender_python_api_current/bpy.types.BlendDataLibraries.html?highlight=blenddatalibraries
-#    modern lib doc https://docs.blender.org/api/current/bpy.types.BlendDataLibraries.html
+#    modern Lib doc https://docs.blender.org/api/current/bpy.types.Library.html#bpy.types.Library
+#                       + lib https://docs.blender.org/api/current/bpy.types.BlendDataLibraries.html
 with bpy.data.libraries.load(filepath) as (data_from, data_to):
     #data_to.objects = [name for name in data_from.objects if name.startswith("house")]
-    data_to.objects = [name for name in data_from.objects ]
+    data_to.collections = [name for name in data_from.collections ]
 
+
+
+
+print("******scene")
 # link them to scene
 scene = bpy.context.scene
-for obj in data_to.objects:
-    if obj is not None:
-        scene.objects.link(obj)
+#colle = bpy.context.collection
+#for obj in data_to.collections:
+#    if obj is not None:
+#        #colle.objects.link(obj)
+#        scene.objects.link(obj)
+bpy.data.libraries.load(filepath, link=True)
+
+
+
+print("******all meshes")
+# load all meshes
+with bpy.data.libraries.load(filepath) as (data_from, data_to):
+    data_to.meshes = data_from.meshes
+    
+    
+
+print("******with A")
+# link all objects starting with 'A'
+with bpy.data.libraries.load(filepath, link=True) as (data_from, data_to):
+    data_to.objects = data_from.objects 
+
+
+print("******append everything")
+# append everything
+with bpy.data.libraries.load(filepath) as (data_from, data_to):
+    for attr in dir(data_to):
+        setattr(data_to, attr, getattr(data_from, attr))
+
+
+
+
+
+print("******last")
+# the loaded objects can be accessed from 'data_to' outside of the context
+# since loading the data replaces the strings for the datablocks or None
+# if the datablock could not be loaded.
+with bpy.data.libraries.load(filepath) as (data_from, data_to):
+    data_to.meshes = data_from.meshes
+# now operate directly on the loaded data
+for mesh in data_to.meshes:
+    if mesh is not None:
+        print(mesh.name)
+        
+#link KO deprecated
+https://blenderartists.org/t/how-to-append-a-collection-with-python-in-2-80/1155113
