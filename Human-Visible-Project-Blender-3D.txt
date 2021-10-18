@@ -28,15 +28,20 @@
  
         623 last ribs z
         639 last ribs
+        
        0741      pelvis
         747      ombilic ( pelvis POST > ombilic ), muscles ?
+        827
         814
         847
         856
         876 Blader
         
+        893              *hole
+        895 femur        *hole     
+        900      pubis   *hole   
+        930              *hole     
         
-        900      pubis 
         967      sex penis
         999      1->2
        1132      thigh

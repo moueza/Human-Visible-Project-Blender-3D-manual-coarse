@@ -113,4 +113,4 @@ for mesh in data_to.meshes:
         print(mesh.name)
         
 #link KO deprecated
-https://blenderartists.org/t/how-to-append-a-collection-with-python-in-2-80/1155113
+#https://blenderartists.org/t/how-to-append-a-collection-with-python-in-2-80/1155113
