@@ -5,7 +5,9 @@
 
 .list objects of a file https://devtalk.blender.org/t/list-all-objects-in-a-blend-file/19340/5
 .update Gotchas https://docs.blender.org/api/current/info_gotcha.html?highlight=gotchas#stale-data
-
+.Scale cage (along personal axis https://docs.blender.org/manual/en/latest/scene_layout/object/tools/scale_cage.html
+https://www.youtube.com/watch?v=4G8KFqrVCcQ )
+~ Lattice
 .TODO function clockwise_rot_curves() clokwise rotation of curve dots for z matching, or narest
 
        0066 back hole ?
