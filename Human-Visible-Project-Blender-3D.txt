@@ -13,7 +13,7 @@ https://www.youtube.com/watch?v=4G8KFqrVCcQ )
        0066 back hole ?
        0080 long front hole ?
  
-.image-0116.jpeg brain eyes
+.image-0116.jpeg brain eyes skull
        0213      carotid+neck
        0225      triangle + bump ?
         278      carotid
@@ -47,7 +47,7 @@ https://www.youtube.com/watch?v=4G8KFqrVCcQ )
         893              *hole
         895 femur        *hole     
         900      pubis   *hole   
-        930              *hole     
+        930              *hole   lattice  
         
         967      sex penis
         999      1->2
