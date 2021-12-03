@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*
 #Bl2.93.3
 #10by10
-
+#import bpy ; import os ; filename420547 = os.path.join(os.path.dirname(bpy.data.filepath), "Human-Visible-Project-Blender-3D-manual-coarseBl293curvesMERGER.py"); exec(compile(open(filename420547).read(), filename420547, 'exec'))
 
 import os
 
@@ -9,10 +9,7 @@ import os
 import bpy as b
 #from Blender import Library
 
- 
-
-#  import bpy ; import os ; filename420547 = os.path.join(os.path.dirname(bpy.data.filepath), "Human-Visible-Project-Blender-3D-manual-coarseBl293curvesMERGERpoub.py"); exec(compile(open(filename420547).read(), filename420547, 'exec'))
-prenom = 88888
+ prenom = 88888
 text = "DDDDu in %s\n" % prenom
 #filename= "/home/peter/POUB/blender/DANSE/kizombaSemba/COURS/kizomba-Mervil-sem02-avance-Bl28.txt"
 filename435 = "/home/peter/POUB/blender/Human-Visible-Project-Blender-3D-manual-coarseBl293curvesMERGERpoub"
