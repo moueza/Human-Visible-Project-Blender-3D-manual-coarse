@@ -1,46 +1,123 @@
 # -*- coding: utf-8 -*
 #Bl2.93.3
 #10by10
-#import bpy ; import os ; filename420547 = os.path.join(os.path.dirname(bpy.data.filepath), "Human-Visible-Project-Blender-3D-manual-coarseBl293curvesMERGER.py"); exec(compile(open(filename420547).read(), filename420547, 'exec'))
 
+import bpy
 import os
-
-#import Blender as b
-import bpy as b
-#from Blender import Library
-
- prenom = 88888
+#import bpy ; import os ; filename420547 = os.path.join(os.path.dirname(bpy.data.filepath), "Human-Visible-Project-Blender-3D-manual-coarseBl293curvesMERGER.py"); exec(compile(open(filename420547).read(), filename420547, 'exec'))
+prenom = 88888
 text = "DDDDu in %s\n" % prenom
 #filename= "/home/peter/POUB/blender/DANSE/kizombaSemba/COURS/kizomba-Mervil-sem02-avance-Bl28.txt"
-filename435 = "/home/peter/POUB/blender/Human-Visible-Project-Blender-3D-manual-coarseBl293curvesMERGERpoub"
-#https://blenderartists.org/t/how-to-append-a-collection-with-python-in-2-80/1155113
+filename435 = "/home/peter/POUB/blender/DANSE/kizombaSemba/COURS/poub.txt"
  
-#This module provides access to objects stored in .blend files. With it scripts can append from Blender files to the current scene, like the File->Append menu entry in Blender does. It allows programmers to use .blend files as data files for their scripts.
+f = open(filename435,'a')
+print('lbl4')
+f.write(text)
+f.close
+    
+print("lbl20 len = ",len(bpy.data.collections))
 
 
-##https://docs.blender.org/api/2.33/Library-module.html#Example:
-def f(name):
-     open_library(name)
 
-     def open_library(name):
-       Library.Open(name)
-       groups = Library.LinkableGroups()
+#delete already ancient collections
+#generate for test
+for collection in bpy.data.collections :
+   print("collection.name = ",collection.name) 
+   #bpy.data.collections.remove(collection)
+   #or index       
+   if (not(-1 == collection.name.find('Coll'))):
+        print("True call")
+        #https://b3d.interplanety.org/en/removing-collections-through-the-blender-python-api/
+        for obj in collection.objects:
+           #lbl45
+           bpy.data.objects.remove(obj, do_unlink=True)    
+        bpy.data.collections.remove(collection)
+           #lbl45
+           
 
-       for db in groups:
-         print("DATABLOCK %s:" % db)
-         for obname in Library.Datablocks(db):
-           print( obname)
+   else:
+        print(False)
+   
+#print(bpy.data.collections[2])
 
-       if 'Object' in groups:
-         for obname in Library.Datablocks('Object'):
-           Library.Load(obname, 'Object', 0) # note the 0...
-         Library.Update()
 
-       Library.Close()
-       b.Redraw()
 
-#https://blenderartists.org/t/force-view3d-refresh-blender-redraw-in-2-5/506023
-#b.Window.FileSelector(f, "Choose Library", "*.blend")
-#b.Window.FileSelector(f, "Choose Library", "*.blend")
-#bpy.data.scenes[0].update()
-#bpy.ops.scene.delete() https://docs.blender.org/api/current/bpy.ops.scene.html
+#import APPEND https://b3d.interplanety.org/en/how-to-append-an-object-from-another-blend-file-to-the-scene-using-the-blender-python-api/
+filepath = "/home/peter/POUB/Human-Visible-Project-Blender-3D/Human-Visible-Project-Blender-3D-manual-coarseBl293curves.blend"
+#file_path = 'D:/11.blend'bpy.ops.wm.append( filename="Human-Visible-Project-Blender-3D-manual-coarseBl293curves.blend")
+#inner_path = 'Collection'
+#object_name = 'Suzanne'
+#bpy.ops.wm.append(
+#    filepath=os.path.join(file_path, inner_path, object_name),
+#    directory=os.path.join(file_path, inner_path),
+#    filename=object_name
+#    )
+
+#blender python api objects of another file
+#https://blender.stackexchange.com/questions/75746/import-multiple-objects-using-python
+#    ancien lib doc   https://docs.blender.org/api/blender_python_api_current/bpy.types.BlendDataLibraries.html?highlight=blenddatalibraries
+#    modern Lib doc https://docs.blender.org/api/current/bpy.types.Library.html#bpy.types.Library
+#                       + lib https://docs.blender.org/api/current/bpy.types.BlendDataLibraries.html
+with bpy.data.libraries.load(filepath) as (data_from, data_to):
+    #data_to.objects = [name for name in data_from.objects if name.startswith("house")]
+    data_to.collections = [name for name in data_from.collections ]
+
+
+
+
+print("******scene")
+# link them to scene
+scene = bpy.context.scene
+#colle = bpy.context.collection
+#for obj in data_to.collections:
+#    if obj is not None:
+#        #colle.objects.link(obj)
+#        scene.objects.link(obj)
+bpy.data.libraries.load(filepath, link=True)
+
+
+
+print("******all meshes")
+# load all meshes
+with bpy.data.libraries.load(filepath) as (data_from, data_to):
+    data_to.meshes = data_from.meshes
+    
+    
+
+print("******with A")
+# link all objects starting with 'A'
+with bpy.data.libraries.load(filepath, link=True) as (data_from, data_to):
+    data_to.objects = data_from.objects 
+
+
+print("******append everything")
+# append everything
+with bpy.data.libraries.load(filepath) as (data_from, data_to):
+    for attr in dir(data_to):
+        setattr(data_to, attr, getattr(data_from, attr))
+
+
+
+
+
+print("******last")
+# the loaded objects can be accessed from 'data_to' outside of the context
+# since loading the data replaces the strings for the datablocks or None
+# if the datablock could not be loaded.
+#https://docs.blender.org/api/blender_python_api_2_77_1/bpy.types.BlendDataLibraries.html
+with bpy.data.libraries.load(filepath) as (data_from, data_to):
+    data_to.meshes = data_from.meshes
+    # now operate directly on the loaded data
+    for mesh2 in data_to.meshes:
+       if mesh2 is not None:
+          print("mesh2.name to= ")
+          #print(mesh2.name)
+          print(mesh2)
+    for mesh2 in data_to.meshes:
+       if mesh2 is not None:
+          print("mesh2.name from= ")
+          #print(mesh2.name)
+          print(mesh2)
+        
+#link KO deprecated
+#https://blenderartists.org/t/how-to-append-a-collection-with-python-in-2-80/1155113
