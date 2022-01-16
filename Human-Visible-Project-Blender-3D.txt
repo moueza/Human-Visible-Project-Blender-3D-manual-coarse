@@ -8,8 +8,9 @@
 .Scale cage (along personal axis https://docs.blender.org/manual/en/latest/scene_layout/object/tools/scale_cage.html
 https://www.youtube.com/watch?v=4G8KFqrVCcQ )
 ~ Lattice
-.TODO function clockwise_rot_curves() clokwise rotation of curve dots for z matching, or narest
+.TODO function clockwise_rot_curves() clockwise rotation of curve dots for z matching, or narest
 
+colon ?
        0066 back hole ?
        0080 long front hole ?
  
