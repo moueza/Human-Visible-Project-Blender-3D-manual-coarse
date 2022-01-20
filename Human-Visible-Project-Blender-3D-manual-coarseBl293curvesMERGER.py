@@ -23,8 +23,9 @@ print("lbl20 len = ",len(bpy.data.collections))
 coll_name = "Coll"
 
 # append, set to true to keep the link to the original file
-link = False
+link = False 
 
+filepath="/home/peter/POUB/Human-Visible-Project-Blender-3D/Human-Visible-Project-Blender-3D-manual-coarseBl293curves.blend"
 # link all collections starting with 'MyCollection'
 with bpy.data.libraries.load(filepath, link=link) as (data_from, data_to):
     data_to.collections = [c for c in data_from.collections if c.startswith(coll_name)]
