@@ -2,6 +2,10 @@
 #Bl2.93.3
 #10by10
 
+
+#TODO delete own coll
+#TODO delete img
+
 import bpy
 import os
 #import bpy ; import os ; filename420547 = os.path.join(os.path.dirname(bpy.data.filepath), "Human-Visible-Project-Blender-3D-manual-coarseBl293curvesMERGER.py"); exec(compile(open(filename420547).read(), filename420547, 'exec'))
