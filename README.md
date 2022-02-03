@@ -8,6 +8,8 @@ Mainly manual at first
 
 Modelization, model
 
+Preferred anatomy designation language = latin
+
 References : 
 - img extract https://www.youtube.com/watch?v=dPPjUtiAGYs
 
