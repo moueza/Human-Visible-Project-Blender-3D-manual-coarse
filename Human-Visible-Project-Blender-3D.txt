@@ -15,8 +15,17 @@ colon ?
        0080 long front hole ?
  
 .image-0116.jpeg brain eyes skull
-       0213      carotid+neck
+       0171 asymetric brain
+       
+       0194 intervertebral disc ""C1-C2 
+       0200 intervertebral disc ""C1-C2 
+       
+       0211                    intervertebral disc ""C2-
+       0213      carotid+neck  intervertebral disc ""C2-
+       0219                    intervertebral disc ""C2-
+       
        0225      triangle + bump ?
+       0232                    intervertebral disc ""C3- 
         278      carotid
        
         287      rachis+trachea+esophagus 
@@ -25,20 +34,57 @@ colon ?
         301      lungs start top
        0358      aorta
        0407      1->3
+       
+        439                           intervertebral disc "" -11
+        445
+        
+        
  image-0454.jpeg heart + end of lungs (diaphragm)
+ 
+        464                           intervertebral disc "" -10
+        471
+        
+        
         481      white left ?
+        
+        490          true rib         intervertebral disc "" -9
+        496
+        
         506      dammage
   
+        513                   intervertebral disc "" -8
+        521
+        
         526 liver
         
+        543   liver?      D10 intervertebral disc "" -7 D11
+        555
+        
+        574               D11 intervertebral disc "" -6 D12
+        587
+        
         609  
+        611               D12 intervertebral disc "" -5 L1
  image-0614.jpeg kidneys
  
-        623 last ribs z
+        623 last ribs z   D12 intervertebral disc "" -5 L1
         639 last ribs
+        
+        646                L1 intervertebral disc "" -4 L2
+        660
+        
+        684                L2 intervertebral disc "" -3 L3
+        698
+        
+        725                L3 intervertebral disc "" -2 L4
+        739
         
        0741      pelvis
         747      ombilic ( pelvis POST > ombilic ), muscles ?
+        
+        769   L4 intervertebral disc ""last = -1 L5
+        780
+        
         827
         814
         847
