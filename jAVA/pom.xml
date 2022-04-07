@@ -47,7 +47,7 @@
 		<springframework.version>5.1.5.RELEASE</springframework.version>
 		<springsecu.version>5.2.11.RELEASE</springsecu.version>
 
-		<hibernate.version>5.3.7.Final</hibernate.version>
+		<hibernate.version>5.4.24.Final</hibernate.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<junit5.version>5.1.1</junit5.version>
 		<junitplatform.version>1.0.0</junitplatform.version>
